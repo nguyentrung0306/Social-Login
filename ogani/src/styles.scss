@@ -1,0 +1,20 @@
+/* You can add global styles to this file; and also import other style files */
+@import 'assets/css/bootstrap.min.css';
+@import 'assets/css/font-awesome.min.css';
+@import 'assets/css/elegant-icons.css';
+@import 'assets/css/nice-select.css';
+@import 'assets/css/jquery-ui.min.css';
+@import 'assets/css/owl.carousel.min.css';
+@import 'assets/css/style.css';
+@import 'assets/css/slicknav.min.css';
+
+@import '~ngx-owl-carousel-2/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-2/lib/styles/scss/owl.theme.default';
+
+// import taiga-ui
+@import '~@taiga-ui/core/styles/taiga-ui-local';
+
+// import tailwind
+//@import '~tailwindcss/base';
+//@import '~tailwindcss/components';
+//@import '~tailwindcss/utilities';

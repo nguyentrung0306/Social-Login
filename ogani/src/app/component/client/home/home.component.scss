@@ -1,0 +1,68 @@
+@mixin style-owl {
+  position: absolute;
+  height: 70px;
+  width: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white !important;
+  border: 1px solid #ebebeb;
+}
+
+@mixin owl-span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+}
+
+.owl-carousel {
+  position: relative;
+
+  .owl-prev {
+    @include style-owl();
+    left: -4%;
+
+    span {
+      @include owl-span();
+    }
+  }
+
+  .owl-next {
+    @include style-owl();
+    right: -4%;
+
+    span {
+      @include owl-span();
+    }
+  }
+
+}
+
+.owl-item {
+  height: 270px;
+  position: relative;
+
+  h5 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    bottom: 20px;
+    text-align: center;
+
+    a {
+      font-size: 18px;
+      color: #1c1c1c;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 12px 0 10px;
+      background: #ffffff;
+      display: block;
+    }
+  }
+}
+
+
+

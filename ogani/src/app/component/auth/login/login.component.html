@@ -1,0 +1,30 @@
+<div class="login-container" [style]="background">
+  <div class="login-content">
+    <h2 class="login-title">Login to SpringSocial</h2>
+    <div class="social-login">
+      <a class="btn btn-block social-btn google" [href]="GOOGLE_AUTH_URL">
+        <img [src]="googleLogo" alt="Google"/> Log in with Google</a>
+      <a class="btn btn-block social-btn facebook" [href]="FACEBOOK_AUTH_URL">
+        <img [src]="fbLogo" alt="Facebook"/> Log in with Facebook</a>
+      <a class="btn btn-block social-btn github" [href]="GITHUB_AUTH_URL">
+        <img [src]="githubLogo" alt="Github"/> Log in with Github</a>
+    </div>
+    <div class="or-separator">
+      <span class="or-text">OR</span>
+    </div>
+    <form >
+      <div class="form-item">
+        <input type="email" name="email"
+               class="form-control" placeholder="Email"/>
+      </div>
+      <div class="form-item">
+        <input type="password" name="password"
+               class="form-control" placeholder="Password"/>
+      </div>
+      <div class="form-item">
+        <button type="submit" class="btn btn-block btn-primary">Login</button>
+      </div>
+    </form>
+    <span class="signup-link">New user? <a [routerLink]="['/register']">Sign up!</a></span>
+  </div>
+</div>
