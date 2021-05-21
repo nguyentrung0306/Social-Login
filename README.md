@@ -1,2 +1,2 @@
 # Social-Login
-Project is build from BE spring boot and FE Angula 11.
+Project is build from BE spring boot and FE Angular 11.
